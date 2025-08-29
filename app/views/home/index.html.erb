@@ -1,4 +1,6 @@
 <%= link_to "Posts", posts_path %>
+<%= link_to "Produtos", products_path %>
+<%= link_to "Clientes", customers_path %>
 
 <h1>Página Inicial</h1>
 
@@ -6,6 +8,6 @@
 
 <% @posts.each do |post| %>
 
-    <p><%= link_to post.title, post %></p>    
+    <p><%= link_to post.title, post %></p>
 
 <% end %>
