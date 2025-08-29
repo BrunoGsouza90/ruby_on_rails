@@ -1,0 +1,11 @@
+<%= link_to "Posts", posts_path %>
+
+<h1>Página Inicial</h1>
+
+<p>Bem-Vindo ao meu apredizado de Ruby On Rails.</p>
+
+<% @posts.each do |post| %>
+
+    <p><%= link_to post.title, post %></p>    
+
+<% end %>

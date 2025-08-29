@@ -1,0 +1,49 @@
+<style>
+
+    table {
+
+        border-collapse: collapse;
+
+    }
+
+    th, td {
+
+        border: 1px solid black;
+
+        padding: 20px;
+
+    }
+
+</style>
+
+<h1>Clientes</h1>
+
+<table>
+
+    <thead>
+
+        <tr>
+
+            <th>Nome</th>
+            <th>Telefone</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        <% @customers.each do |customer| %>
+
+            <tr>
+
+                <td>Nome: <%= customer.name  %></td>
+                <td>Telefone: <%= customer.phone  %></td>
+
+            </tr>
+
+        <% end %>
+
+    </tbody>
+
+</table>

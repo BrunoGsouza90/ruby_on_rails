@@ -1,0 +1,27 @@
+<%= link_to "Página Inicial", root_path %>
+
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Posts" %>
+
+<h1>Posts do Bruno</h1>
+
+<div id="posts">
+
+  <% @posts.each do |post| %>
+
+    <%= render post %>
+
+    <p>
+
+      <%= link_to "Visualizar", post %>
+
+    </p>
+
+    <br>
+
+  <% end %>
+
+</div>
+
+<%= link_to "Criar post", new_post_path %>

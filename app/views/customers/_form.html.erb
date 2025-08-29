@@ -1,0 +1,11 @@
+<%= form_with model: @customer do |form| %>
+
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+
+    <%= form.label :phone %>
+    <%= form.text_field :phone %>
+
+    <%= form.submit "Criar" %>
+    
+<% end %>

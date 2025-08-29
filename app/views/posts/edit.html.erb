@@ -1,0 +1,15 @@
+<% content_for :title, "Editando post" %>
+
+<h1>Editar post</h1>
+
+<%= render "form", post: @post %>
+
+<br>
+
+<div>
+
+  <%= link_to "Visualizar", @post %> |
+
+  <%= link_to "Voltar", posts_path %>
+
+</div>
